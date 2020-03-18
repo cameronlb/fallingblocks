@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 7;
     Vector2 movement = new Vector2();
+    
 
     private Rigidbody2D rb2d;
 
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
-        Vector2 movement = new Vector2(inputX, inputY);
+        Vector2 movement = new Vector2(inputX, (inputY * 1.2f));
         rb2d.AddForce(movement * speed);
         Boundaries();
 
