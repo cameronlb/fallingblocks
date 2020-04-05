@@ -15,9 +15,9 @@
         </e>
       </e>
       <e p="Assets\Scripts" t="Include">
-        <e p="Boundary.cs" t="Include" />
         <e p="Bullet.cs" t="Include" />
         <e p="Circle.cs" t="Include" />
+        <e p="Difficulty.cs" t="Include" />
         <e p="FallingBlock.cs" t="Include" />
         <e p="PlayerController.cs" t="Include" />
         <e p="Spawner.cs" t="Include" />
