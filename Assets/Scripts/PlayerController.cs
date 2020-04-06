@@ -8,8 +8,10 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 7;
     Vector2 movement = new Vector2();
-    
 
+
+    public event System.Action OnPlayerDeath;
+    
     private Rigidbody2D rb2d;
 
     private float screenHalfWidthInWorldUnits;
@@ -29,21 +31,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        Boundaries();
+    }
+
+    private void FixedUpdate()
+    {
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
         Vector2 movement = new Vector2(inputX, (inputY * 1.2f));
         rb2d.AddForce(movement * speed);
-        Boundaries();
-
-
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D triggerCollider)
     {
         if (triggerCollider.tag == "Falling Block")
         {
+            if (OnPlayerDeath != null)
+            {
+                OnPlayerDeath();
+            }
             Destroy(gameObject);
         }
     }

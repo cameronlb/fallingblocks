@@ -9,12 +9,16 @@ public class FallingBlock : MonoBehaviour
 	private float speed;
 	private float health = Spawner.GetSpawnSize();
 
+	private float visibleHeightThreshold;
+
 
 	public Rigidbody2D rb;
 	// Use this for initialization
 	void Start ()
 	{
 		speed = Mathf.Lerp(speedMinMax.x, speedMinMax.y, Difficulty.GetDifficultyPercent());
+
+		visibleHeightThreshold = -Camera.main.orthographicSize - transform.localScale.y;
 	}
 	
 	// Update is called once per frame
@@ -24,6 +28,15 @@ public class FallingBlock : MonoBehaviour
 		{
 			print(health);
 			Destroy(gameObject);
+		}
+
+		if (transform.position.y < visibleHeightThreshold)
+		{
+			Destroy(gameObject);
+		}
+
+		{
+			
 		}
 	}
 

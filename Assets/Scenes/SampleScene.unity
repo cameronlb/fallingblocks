@@ -359,7 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 426395720}
-  attackSpeed: 1
   damage: 0.1
   bulletPrefab: {fileID: 1137160245323858, guid: e6554f368b17f644198b6759ad5e5fcd,
     type: 2}
