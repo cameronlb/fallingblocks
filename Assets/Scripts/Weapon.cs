@@ -23,7 +23,8 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         shooting = false;
-        if (Input.GetButton("Fire1"))
+        // if (Input.GetButton("Fire1"))
+        if (Input.touchCount > 0)
         {
             shooting = true;
         }

@@ -3,26 +3,53 @@
   <component name="ContentModelStore">
     <e p="C:\Git\FallingBlocks\FallingBlocks" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
-      <e p="Assets\Plugins" t="Include">
-        <e p="GitHub" t="Include">
-          <e p="Editor" t="Include">
-            <e p="credits.txt" t="Include" />
-            <e p="eula.txt" t="Include" />
-            <e p="ExtensionLoader.cs" t="Include" />
-            <e p="UnityAPIWrapper.cs" t="Include" />
+      <e p="Assets" t="Include">
+        <e p="Joystick Pack" t="Include">
+          <e p="Examples" t="Include">
+            <e p="JoystickPlayerExample.cs" t="Include" />
+            <e p="JoystickSetterExample.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Base" t="Include">
+              <e p="Joystick.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="DynamicJoystickEditor.cs" t="Include" />
+              <e p="FloatingJoystickEditor.cs" t="Include" />
+              <e p="JoystickEditor.cs" t="Include" />
+              <e p="VariableJoystickEditor.cs" t="Include" />
+            </e>
+            <e p="Joysticks" t="Include">
+              <e p="DynamicJoystick.cs" t="Include" />
+              <e p="FixedJoystick.cs" t="Include" />
+              <e p="FloatingJoystick.cs" t="Include" />
+              <e p="VariableJoystick.cs" t="Include" />
+            </e>
           </e>
         </e>
-      </e>
-      <e p="Assets\Scripts" t="Include">
-        <e p="Bullet.cs" t="Include" />
-        <e p="Circle.cs" t="Include" />
-        <e p="Difficulty.cs" t="Include" />
-        <e p="FallingBlock.cs" t="Include" />
-        <e p="GameOver.cs" t="Include" />
-        <e p="PlayerController.cs" t="Include" />
-        <e p="Spawner.cs" t="Include" />
-        <e p="Weapon.cs" t="Include" />
+        <e p="Plugins" t="Include">
+          <e p="GitHub" t="Include">
+            <e p="Editor" t="Include">
+              <e p="credits.txt" t="Include" />
+              <e p="eula.txt" t="Include" />
+              <e p="ExtensionLoader.cs" t="Include" />
+              <e p="UnityAPIWrapper.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
+          <e p="Circle.cs" t="Include" />
+          <e p="Difficulty.cs" t="Include" />
+          <e p="FallingBlock.cs" t="Include" />
+          <e p="GameOver.cs" t="Include" />
+          <e p="MoveByTouch.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
+          <e p="Weapon.cs" t="Include" />
+        </e>
       </e>
       <e p="FallingBlocks.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
