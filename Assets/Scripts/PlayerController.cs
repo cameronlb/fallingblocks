@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 7;
     Vector2 movement = new Vector2();
 
-    public Joystick joystick;
+    public Joystick joystickMovement;
 
 
     public event System.Action OnPlayerDeath;
@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
     {
         // float inputX = Input.GetAxisRaw("Horizontal");
         // float inputY = Input.GetAxisRaw("Vertical");
-        float inputX = joystick.Horizontal;
-        float inputY = joystick.Vertical;
+        float inputX = joystickMovement.Horizontal;
+        float inputY = joystickMovement.Vertical;
         
         Vector2 movement = new Vector2(inputX, (inputY * 1.2f));
         rb2d.AddForce(movement * speed);

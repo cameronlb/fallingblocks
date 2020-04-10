@@ -43,6 +43,7 @@
           <e p="Bullet.cs" t="Include" />
           <e p="Circle.cs" t="Include" />
           <e p="Difficulty.cs" t="Include" />
+          <e p="Explosion.cs" t="Include" />
           <e p="FallingBlock.cs" t="Include" />
           <e p="GameOver.cs" t="Include" />
           <e p="MoveByTouch.cs" t="Include" />

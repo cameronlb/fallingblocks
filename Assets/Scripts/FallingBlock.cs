@@ -40,9 +40,9 @@ public class FallingBlock : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerEnter2D(Collider2D other)
+	private void OnTriggerEnter2D(Collider2D triggerCollider)
 	{
-		if (other.tag == "Bullet")
+		if (triggerCollider.tag == "Bullet")
 		{
 			health -= 0.1f;
 			print(health);

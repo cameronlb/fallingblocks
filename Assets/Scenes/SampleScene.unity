@@ -378,12 +378,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 112.6
+      value: 699.4
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 105.8
+      value: 105.79999
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -507,7 +507,6 @@ GameObject:
   - component: {fileID: 963897740}
   - component: {fileID: 963897739}
   - component: {fileID: 963897742}
-  - component: {fileID: 963897743}
   - component: {fileID: 963897738}
   - component: {fileID: 963897744}
   - component: {fileID: 963897745}
@@ -615,18 +614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   joystick: {fileID: 819325893}
---- !u!114 &963897743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963897737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eec7a12a73db3541b53ffabf4aab45c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &963897744
 BoxCollider2D:
   m_ObjectHideFlags: 0
